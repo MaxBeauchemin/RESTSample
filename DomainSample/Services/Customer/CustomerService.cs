@@ -9,7 +9,7 @@ namespace DomainSample.Services.Customer
         {
             var context = new DatabaseSampleContext();
 
-            return context.Customers.Select(c => c.EmailAddress).ToList();
+            return context.Customers.Where(c => c.EmailAddress != null).Select(c => c.EmailAddress).ToList();
         }
     }
 }

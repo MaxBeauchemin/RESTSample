@@ -10,8 +10,18 @@
 --------------------------------------------------------------------------------------
 */
 
-CREATE LOGIN db_rw_login WITH PASSWORD = 'P4$$W0RD'
+IF NOT EXISTS 
+    (SELECT name  
+     FROM master.sys.server_principals
+     WHERE name = 'db_rw')
+BEGIN
 
-CREATE USER db_rw FOR LOGIN db_rw_login
+    CREATE LOGIN db_rw WITH PASSWORD = 'P4$$W0RD'
 
-ALTER ROLE db_owner ADD MEMBER db_rw
+    CREATE USER db_rw FOR LOGIN db_rw
+
+    ALTER ROLE db_owner ADD MEMBER db_rw
+
+END
+
+:r ".\AddTestData.sql"

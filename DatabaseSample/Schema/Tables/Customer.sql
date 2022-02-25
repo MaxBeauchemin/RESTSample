@@ -6,3 +6,4 @@
 	[EmailAddress]	NVARCHAR(250)	NULL,
 	[PhoneNumber]	NVARCHAR(30)	NULL
 )
+GO

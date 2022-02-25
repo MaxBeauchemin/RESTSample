@@ -5,10 +5,10 @@ using System;
 namespace UnitTestSample
 {
     [TestClass]
-    public class UnitTest1
+    public class CustomerTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestGetCustomerEmails()
         {
             var customerService = new CustomerService();
 

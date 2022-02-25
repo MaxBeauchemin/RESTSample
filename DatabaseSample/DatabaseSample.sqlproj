@@ -58,12 +58,21 @@
     <Folder Include="Schema\Tables" />
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Post-Publish" />
+    <Folder Include="Scripts\Post-Publish\TestData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Tables\Customer.sql" />
     <PostDeploy Include="Scripts\Post-Publish\DatabaseSetup.sql" />
+    <Build Include="Schema\Tables\Product.sql" />
+    <Build Include="Schema\Tables\Order.sql" />
+    <Build Include="Schema\Tables\OrderLine.sql" />
+    <None Include="Scripts\Post-Publish\TestData\AddCustomers.sql" />
+    <None Include="Scripts\Post-Publish\TestData\AddOrderLines.sql" />
+    <None Include="Scripts\Post-Publish\TestData\AddOrders.sql" />
+    <None Include="Scripts\Post-Publish\TestData\AddProducts.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseSample.publish.xml" />
+    <None Include="Scripts\Post-Publish\AddTestData.sql" />
   </ItemGroup>
 </Project>
