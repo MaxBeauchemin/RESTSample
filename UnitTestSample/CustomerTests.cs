@@ -8,13 +8,13 @@ namespace UnitTestSample
     public class CustomerTests
     {
         [TestMethod]
-        public void TestGetCustomerEmails()
+        public void TestGetAllCustomers()
         {
             var customerService = new CustomerService();
 
-            var emails = customerService.GetCustomerEmails();
+            var customers = customerService.GetAllCustomers();
 
-            Assert.AreEqual(1, emails.Count);
+            Assert.AreEqual(2, customers.Count);
         }
     }
 }

@@ -1,15 +1,30 @@
-﻿using System.Collections.Generic;
+﻿using DomainSample.DTOs.Customer;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DomainSample.Services.Customer
 {
     public class CustomerService
     {
-        public List<string> GetCustomerEmails()
+        private readonly DatabaseSampleContext _context;
+        public CustomerService()
         {
-            var context = new DatabaseSampleContext();
+            _context = new DatabaseSampleContext();
+        }
 
-            return context.Customers.Where(c => c.EmailAddress != null).Select(c => c.EmailAddress).ToList();
+        public List<CustomerDto> GetAllCustomers()
+        {
+            return _context.Customers.ToList().Select(c => new CustomerDto(c)).ToList();
+        }
+
+        public CustomerDetailsDto GetCustomerDetailsById(int id)
+        {
+            var model = _context.Customers.Where(c => c.Id == id).FirstOrDefault();
+
+            if (model == null) throw new ArgumentException("Customer Not Found");
+
+            return new CustomerDetailsDto(model);
         }
     }
 }
