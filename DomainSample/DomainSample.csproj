@@ -52,8 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\Customer\CreateCustomerRequest.cs" />
     <Compile Include="DTOs\Customer\CustomerDetailsDto.cs" />
     <Compile Include="DTOs\Customer\CustomerDto.cs" />
+    <Compile Include="DTOs\Customer\UpdateCustomerRequest.cs" />
     <Compile Include="Models\OrderLine.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Order.cs" />

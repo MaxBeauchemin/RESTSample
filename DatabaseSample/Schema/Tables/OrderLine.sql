@@ -1,11 +1,16 @@
 ﻿CREATE TABLE [dbo].[OrderLine]
 (
-	[Id]			INT				NOT NULL		PRIMARY KEY		IDENTITY(1, 1),
-	[OrderId]		INT				NOT NULL,
-	[ProductId]		INT				NOT NULL,
-	[PricePerItem]	DECIMAL			NOT NULL,
-	[Quantity]		INT				NOT NULL
+	[Id]			INT		IDENTITY(1, 1)		NOT NULL,
+	[OrderId]		INT							NOT NULL,
+	[ProductId]		INT							NOT NULL,
+	[PricePerItem]	DECIMAL						NOT NULL,
+	[Quantity]		INT							NOT NULL
 )
+GO
+
+ALTER TABLE [dbo].[OrderLine]
+ADD CONSTRAINT PK_OrderLine 
+PRIMARY KEY (Id)
 GO
 
 ALTER TABLE [dbo].[OrderLine]

@@ -10,13 +10,15 @@
 --------------------------------------------------------------------------------------
 */
 
-IF NOT EXISTS 
-    (SELECT name  
-     FROM master.sys.server_principals
-     WHERE name = 'db_rw')
+IF NOT EXISTS (SELECT name FROM master.sys.server_principals WHERE name = 'db_rw')
 BEGIN
 
     CREATE LOGIN db_rw WITH PASSWORD = 'P4$$W0RD'
+
+END
+
+IF NOT EXISTS (SELECT name FROM master.sys.server_principals WHERE name = 'db_rw_user')
+BEGIN
 
     CREATE USER db_rw FOR LOGIN db_rw
 
