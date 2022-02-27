@@ -14,6 +14,8 @@ The intent of this project is to serve as a basic example of a REST Web API proj
 	- This project acts as the "Logic" layer between the Database and the Web APIs/Unit Tests
 	- :file_folder:`DTOs`
 		- Data Transfer Objects, which are classes used to represent data in transit between the Database and the APIs
+	- :file_folder:`Enums`
+		- Enum Objects, which are used to represent a predetermined list of values for a Type of data
 	- :file_folder:`Models`
 		- Entity Framework Models that represent the database tables
 	- :file_folder:`Services`

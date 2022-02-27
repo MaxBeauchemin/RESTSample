@@ -75,6 +75,7 @@ namespace UnitTestSample
             var customer = _customerService.GetCustomerDetailsById(1);
 
             Assert.AreEqual("Greg", customer.FirstName);
+            Assert.AreEqual(1, customer.CompletedOrderCount);
         }
 
         [TestMethod]

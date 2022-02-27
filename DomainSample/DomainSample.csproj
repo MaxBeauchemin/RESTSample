@@ -56,6 +56,7 @@
     <Compile Include="DTOs\Customer\CustomerDetailsDto.cs" />
     <Compile Include="DTOs\Customer\CustomerDto.cs" />
     <Compile Include="DTOs\Customer\UpdateCustomerRequest.cs" />
+    <Compile Include="Enums\OrderStatus.cs" />
     <Compile Include="Models\OrderLine.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Order.cs" />
