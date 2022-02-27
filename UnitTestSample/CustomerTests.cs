@@ -93,5 +93,30 @@ namespace UnitTestSample
 
             Assert.IsTrue(failed, "Expected to Fail");
         }
+
+        [TestMethod]
+        public void F_DeleteCustomer()
+        {
+            var customer = _customerService.CreateCustomer(new CreateCustomerRequest
+            {
+                FirstName = "Temp",
+                LastName = "User"
+            });
+
+            var deletedId = _customerService.DeleteCustomerById(customer.Id);
+
+            var failed = false;
+
+            try
+            {
+                var retrievedCustomer = _customerService.GetCustomerDetailsById(deletedId);
+            }
+            catch
+            {
+                failed = true;
+            }
+
+            Assert.IsTrue(failed, "Expected to Fail");
+        }
     }
 }

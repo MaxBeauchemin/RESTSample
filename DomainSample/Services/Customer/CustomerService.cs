@@ -47,6 +47,19 @@ namespace DomainSample.Services.Customer
             return new CustomerDto(model);
         }
 
+        public int DeleteCustomerById(int id)
+        {
+            var model = _context.Customers.Where(c => c.Id == id).FirstOrDefault();
+
+            if (model == null) throw new ArgumentException("Customer Not Found");
+
+            _context.Customers.Remove(model);
+
+            _context.SaveChanges();
+
+            return id;
+        }
+
         public List<CustomerDto> GetAllCustomers()
         {
             return _context.Customers.ToList().Select(c => new CustomerDto(c)).ToList();
