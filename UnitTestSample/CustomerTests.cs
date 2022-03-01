@@ -32,6 +32,10 @@ namespace UnitTestSample
             Assert.AreEqual(customer.LastName, retrievedCustomer.LastName);
             Assert.AreEqual(customer.EmailAddress, retrievedCustomer.EmailAddress);
             Assert.AreEqual(customer.PhoneNumber, retrievedCustomer.PhoneNumber);
+
+            //Cleanup
+
+            _customerService.DeleteCustomerById(customer.Id);
         }
 
         [TestMethod]
@@ -59,6 +63,10 @@ namespace UnitTestSample
             Assert.AreEqual(updatedCustomer.LastName, retrievedCustomer.LastName);
             Assert.AreEqual(updatedCustomer.EmailAddress, retrievedCustomer.EmailAddress);
             Assert.AreEqual(updatedCustomer.PhoneNumber, retrievedCustomer.PhoneNumber);
+
+            //Cleanup
+
+            _customerService.DeleteCustomerById(customer.Id);
         }
 
         [TestMethod]
@@ -66,7 +74,7 @@ namespace UnitTestSample
         {
             var customers = _customerService.GetAllCustomers();
 
-            Assert.AreEqual(4, customers.Count);
+            Assert.AreEqual(2, customers.Count);
         }
 
         [TestMethod]
