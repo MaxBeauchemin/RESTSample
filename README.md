@@ -18,6 +18,8 @@ The intent of this project is to serve as a basic example of a REST Web API proj
 		- Enum Objects, which are used to represent a predetermined list of values for a Type of data
 	- :file_folder:`Models`
 		- Entity Framework Models that represent the database tables
+	- :file_folder:`Resources`
+		- Helpful files and other general resources
 	- :file_folder:`Services`
 		- Logic classes that contain the necessary code to communicate between Database and the APIs
 - `RESTSample`
@@ -37,4 +39,4 @@ The intent of this project is to serve as a basic example of a REST Web API proj
 		- Data storage and processing
 - [SQL Server Express 2019](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
-- [Postman](https://www.postman.com/downloads/)
+- [Postman](https://www.postman.com/)

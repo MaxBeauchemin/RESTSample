@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "549cd462-e35d-42ae-a945-cc2a6de14b98",
+		"name": "REST Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/customer",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/customer/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"\",\r\n    \"LastName\": \"\",\r\n    \"EmailAddress\": \"\",\r\n    \"PhoneNumber\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/customer",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FirstName\": \"\",\r\n    \"LastName\": \"\",\r\n    \"EmailAddress\": \"\",\r\n    \"PhoneNumber\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44328/api/customer/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44328/api/customer/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44328",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
