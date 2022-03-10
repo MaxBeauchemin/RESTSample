@@ -2,6 +2,7 @@
 {
     public enum LogArea
     {
-        Customer
+        Customer,
+        Product
     }
 }

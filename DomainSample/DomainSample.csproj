@@ -59,6 +59,10 @@
     <Compile Include="DTOs\Customer\CustomerDetailsDto.cs" />
     <Compile Include="DTOs\Customer\CustomerDto.cs" />
     <Compile Include="DTOs\Customer\UpdateCustomerRequest.cs" />
+    <Compile Include="DTOs\Product\CreateProductRequest.cs" />
+    <Compile Include="DTOs\Product\FindProductsRequest.cs" />
+    <Compile Include="DTOs\Product\ProductDto.cs" />
+    <Compile Include="DTOs\Product\UpdateProductRequest.cs" />
     <Compile Include="Enums\LogArea.cs" />
     <Compile Include="Enums\LogType.cs" />
     <Compile Include="Enums\OrderStatus.cs" />
@@ -75,6 +79,7 @@
     <Compile Include="Services\BaseService.cs" />
     <Compile Include="Services\Customer\CustomerService.cs" />
     <Compile Include="Services\DatabaseSampleContext.cs" />
+    <Compile Include="Services\Product\ProductService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
