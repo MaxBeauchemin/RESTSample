@@ -40,3 +40,7 @@ The intent of this project is to serve as a basic example of a REST Web API proj
 - [SQL Server Express 2019](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 - [Postman](https://www.postman.com/)
+
+## Project Diagram
+
+![Diagram](https://user-images.githubusercontent.com/12040012/156093648-1647c451-481a-42ab-87ba-938f44d17252.png)
