@@ -20,9 +20,9 @@ END
 IF NOT EXISTS (SELECT name FROM master.sys.server_principals WHERE name = 'db_rw_user')
 BEGIN
 
-    CREATE USER db_rw FOR LOGIN db_rw
+    CREATE USER db_rw_user FOR LOGIN db_rw
 
-    ALTER ROLE db_owner ADD MEMBER db_rw
+    ALTER ROLE db_owner ADD MEMBER db_rw_user
 
 END
 
