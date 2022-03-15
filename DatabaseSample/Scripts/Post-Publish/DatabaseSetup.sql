@@ -17,7 +17,7 @@ BEGIN
 
 END
 
-IF NOT EXISTS (SELECT name FROM master.sys.server_principals WHERE name = 'db_rw_user')
+IF NOT EXISTS (SELECT name FROM DatabaseSample.sys.database_principals WHERE name = 'db_rw_user')
 BEGIN
 
     CREATE USER db_rw_user FOR LOGIN db_rw
