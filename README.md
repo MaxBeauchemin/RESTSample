@@ -41,6 +41,18 @@ The intent of this project is to serve as a basic example of a REST Web API proj
 - [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 - [Postman](https://www.postman.com/)
 
+## First Time Setup
+
+1. Install IDE of your choice (Visual Studio Community Recommended)
+2. Install SQL Server Express
+	- Instance Name `localhost\SQLEXPRESS`
+	- Mixed Authentication Mode
+3. Clone repository to your computer
+4. Publish the database by double-clicking the `DatabaseSample.publish.xml` file in Visual Studio and clicking **Publish**
+5. Execute the Unit Tests to make sure the code can connect to the Database
+6. Run the RESTSample project using the Web Browser of your choice to make sure the APIs are functional
+7. (Optional) Import the `REST Sample.postman_collection.json` file into Postman to make sure you are able to easily interact with the Web APIs
+
 ## Project Diagram
 
 ![Diagram](https://user-images.githubusercontent.com/12040012/156093648-1647c451-481a-42ab-87ba-938f44d17252.png)
